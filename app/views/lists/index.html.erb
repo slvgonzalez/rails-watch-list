@@ -6,21 +6,3 @@
 <% end  %>
 
 <%= link_to 'Create list', new_list_path %>
-
-<% @lists.each do |list| %>
-<div class="container">
-  <div class="card">
-      <div class="face face1">
-          <div class="content">
-              <img src="">
-              <h3><%=list.name %></h3>
-          </div>
-      </div>
-      <div class="face face2">
-          <div class="content">
-              <p>Contains <%= l.movies.count %> movies </p>
-                  <a> <%= link_to '👀', list_path(l) %></a>
-          </div>
-      </div>
-  </div>
-</div>
