@@ -1,18 +1,24 @@
+$spacer: 2rem;
+$bold: #BD4B4B;
+$contrast: #EEEEEE;
+$light: #EFB7B7;
+$background: #000000;
+$box: #E6DDC4;
+
 .footer {
-  background: #F4F4F4;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: $contrast;
 }
 .footer-links {
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  color: black;
+  color: $light;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;

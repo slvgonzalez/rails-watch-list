@@ -1,26 +1,32 @@
+$spacer: 2rem;
+$bold: #BD4B4B;
+$contrast: #EEEEEE;
+$light: #EFB7B7;
+$background: #000000;
+$box: #E6DDC4;
 
-.btn-ghost {
-  color: #4A4A4A;
-  border: 1px solid #4A4A4A;
+.btn-flat {
+  color: $contrast;
   padding: 8px 24px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+  border-radius: 4px;
+  background: $bold;
+  transition: background 0.3s ease;
 }
 
-.btn-ghost:hover {
-  opacity: 1;
+.btn-flat:hover {
+  background: $bold;
+  color: $contrast;
 }
 
 /* CSS */
 .button-56 {
+  display: flex;
   align-items: center;
-  background-color: #fee6e3;
-  border: 2px solid #111;
+  background-color: $light;
+  border: 2px solid $background;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #111;
+  color: $background;
   cursor: pointer;
   display: flex;
   font-family: 'Nanum Gothic Coding', monospace;
@@ -28,7 +34,7 @@
   height: 48px;
   justify-content: center;
   line-height: 24px;
-  max-width: 100%;
+  max-width: 20%;
   padding: 0 25px;
   position: relative;
   text-align: center;
@@ -39,7 +45,7 @@
 }
 
 .button-56:after {
-  background-color: #111;
+  background-color: $bold;
   border-radius: 8px;
   content: "";
   display: block;
@@ -58,7 +64,7 @@
 }
 
 .button-56:active {
-  background-color: #ffdeda;
+  background-color: $light;
   outline: 0;
 }
 
