@@ -13,12 +13,13 @@
   <body>
     <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1627133805103-ce2d34ccdd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80);">
       <div class="container">
-       <h1>The <strong> best movies</strong> </h1>
        <p>Explore the best movies in their categories.</p>
-       <a class="btn btn-flat" <%= link_to 'Create list', new_list_path %> ></a>
+       <button class="button-56" role="button"> <%= link_to 'Create list', new_list_path %> </button>
       </div>
     </div>
-    <%= yield %>
+    <div class="content">
+      <%= yield %>
+    </div>
     <div class="footer">
       <div class="footer-links">
         <a href="#"><i class="fab fa-github"></i></a>

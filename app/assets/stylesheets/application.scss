@@ -13,27 +13,31 @@
 @import "pages/index";
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pragati+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
 
 $spacer: 2rem;
 $bold: #BD4B4B;
 $contrast: #EEEEEE;
 $light: #EFB7B7;
-$background: 000000;
+$background: #000000;
 $box: #E6DDC4;
 
-h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 68px;
-  color: $blue;
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: #000000;
 }
 
-h3 {
-  font-family: 'Lobster', cursive;
-  color: $contrast;
-  font-size: 40px;
+.content {
+  padding: $spacer;
+
 }
 
-ul {
-  list-style-type: "➤";
+h2 {
+  font-size: 24px;
+  color: $bold
+}
+
+a {
+  text-decoration: none;
 }

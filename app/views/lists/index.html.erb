@@ -1,10 +1,9 @@
-<h3>All the lists</h3>
-
-<%= link_to 'Create list', new_list_path %>
+<h2>All lists</h2>
 <div class="cards">
   <% @lists.each do |l| %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <%=l.name %> - Contains <%= l.movies.count %> movies <%= link_to '👀', list_path(l) %>
+      <p><%=l.name %> - Contains <%= l.movies.count %> 🎥</p>
+      <a class="btn btn-ghost"><%= link_to 'see more', list_path(l) %></a>
     </div>
   <% end  %>
 </div>
