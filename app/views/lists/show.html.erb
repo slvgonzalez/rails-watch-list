@@ -11,7 +11,10 @@
 <% bookmarks = @list.bookmarks %>
 <ul>
   <% bookmarks.each do |b| %>
-    <li><%= b.comment %></li>
+    <li><%= b.comment %> <%= link_to "✖️",
+            bookmark_path(b),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></li>
   <% end %>
 </ul>
 
