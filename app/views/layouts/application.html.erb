@@ -11,9 +11,25 @@
   </head>
 
   <body>
-    <div class = "frame">
-          <h1>🎥 Watch List</h1>
-          <%= yield %>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1627133805103-ce2d34ccdd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80);">
+      <div class="container">
+       <h1>The <strong> best movies</strong> </h1>
+       <p>Explore the best movies in their categories.</p>
+       <a class="btn btn-flat" <%= link_to 'Create list', new_list_path %> ></a>
+      </div>
+    </div>
+    <%= yield %>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright">
+        This was made with <i class="fas fa-heart"></i> by Silvia at Le Wagon
+      </div>
     </div>
   </body>
 </html>

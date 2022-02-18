@@ -16,20 +16,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pragati+Narrow:wght@400;700&display=swap');
 
 $spacer: 2rem;
-$blue: #181D31;
-$contrast: #678983;
-$background: #F0E9D2;
+$bold: #BD4B4B;
+$contrast: #EEEEEE;
+$light: #EFB7B7;
+$background: 000000;
 $box: #E6DDC4;
-
-
-.frame {
-  padding: $spacer;
-  background-color: $background;
-  font-family: 'Pragati Narrow', sans-serif;
-  color: $contrast;
-  font-size: 20px;
-  min-height: 100vh;
-}
 
 h1 {
   font-family: 'Lobster', cursive;
