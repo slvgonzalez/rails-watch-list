@@ -1,1 +1,19 @@
-<h3>List Page</h3>
+<h3><%= @list.name %> list </h3>
+<% movies = @list.movies %>
+<h5>Contains <%= movies.count %> movies:</h5>
+<ul>
+  <% movies.each do |m| %>
+    <li><%= m.title %></li>
+  <% end %>
+</ul>
+
+<h5>Bookmarks </h5>
+<% bookmarks = @list.bookmarks %>
+<ul>
+  <% bookmarks.each do |b| %>
+    <li><%= b.comment %></li>
+  <% end %>
+</ul>
+
+<p><%= link_to '💬 Add a bookmark and a comment', new_list_bookmark_path(@list) %></p>
+<p><%= link_to 'Back', lists_path %></p>

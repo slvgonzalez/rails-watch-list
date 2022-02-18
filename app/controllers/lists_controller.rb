@@ -8,9 +8,12 @@ class ListsController < ApplicationController
   end
 
   def create
-    @list = List.new(params[:list])
-    @list.save
-    # Will raise ActiveModel::ForbiddenAttributesError
+    @list = List.new(list_params)
+    if @list.save
+      redirect_to list_path(@list)
+    else
+      render :new
+    end
   end
 
   def show

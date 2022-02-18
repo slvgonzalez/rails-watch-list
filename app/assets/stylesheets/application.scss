@@ -11,3 +11,38 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pragati+Narrow:wght@400;700&display=swap');
+
+$spacer: 2rem;
+$blue: #181D31;
+$contrast: #678983;
+$background: #F0E9D2;
+$box: #E6DDC4;
+
+
+.frame {
+  padding: $spacer;
+  background-color: $background;
+  font-family: 'Pragati Narrow', sans-serif;
+  color: $contrast;
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 68px;
+  color: $blue;
+}
+
+h3 {
+  font-family: 'Lobster', cursive;
+  color: $contrast;
+  font-size: 40px;
+}
+
+ul {
+  list-style-type: "➤";
+}

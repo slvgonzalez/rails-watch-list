@@ -1,0 +1,8 @@
+<h3>All the lists</h3>
+<% @lists.each do |l| %>
+<ul>
+  <li><%=l.name %> - Contains <%= l.movies.count %> movies <%= link_to '👀', list_path(l) %></li>
+</ul>
+<% end %>
+
+<%= link_to 'Create list', new_list_path %>
