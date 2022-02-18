@@ -56,3 +56,5 @@ gem 'rails-controller-testing', group: [ :test ]
 
 # We use dotenv gem for security - Cloudinary
 gem 'dotenv-rails', groups: [:development, :test]
+# Gemfile
+gem 'cloudinary'
